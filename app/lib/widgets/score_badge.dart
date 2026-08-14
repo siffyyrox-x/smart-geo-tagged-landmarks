@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/score_color.dart';
 
-/// Small colored chip showing a landmark's score, used on the list, the
-/// map popup, and the Add/View management list - one widget so the color
-/// scale always looks consistent everywhere it appears.
+
 class ScoreBadge extends StatelessWidget {
   final double score;
   final double minScore;
