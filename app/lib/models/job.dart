@@ -1,5 +1,4 @@
-/// Mirrors the three possible shapes get_job_status can return:
-/// VisitJobPending, VisitJobDone, VisitJobFailed.
+
 enum JobStatus { pending, done, failed, unknown }
 
 class VisitJob {
