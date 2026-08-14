@@ -12,10 +12,7 @@ import '../widgets/landmark_image.dart';
 import '../widgets/offline_banner.dart';
 import '../widgets/score_badge.dart';
 
-/// Requirement 2 (Map View):
-///  - Show all landmarks on a map, centered on Bangladesh.
-///  - Each marker represents a landmark and shows details on tap.
-///  - Marker color reflects score (low -> high).
+
 class MapScreen extends StatefulWidget {
   const MapScreen({super.key});
 
