@@ -3,8 +3,7 @@ import '../models/landmark.dart';
 import 'landmark_image.dart';
 import 'score_badge.dart';
 
-/// One row in the Landmarks List screen (Requirement 4: each item must
-/// show Title, Score, Image).
+
 class LandmarkCard extends StatelessWidget {
   final Landmark landmark;
   final double minScore;
