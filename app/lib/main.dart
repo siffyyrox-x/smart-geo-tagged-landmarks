@@ -10,14 +10,10 @@ Future<void> main() async {
   // Needed before calling any plugin (workmanager, sqflite, etc) code.
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Requirement 10: register the guaranteed background-work mechanism
-  // (WorkManager) that polls visit jobs and drains the offline queue.
   await BackgroundWorker.init();
   await BackgroundWorker.registerPeriodicSync();
 
-  // Create the app's three ChangeNotifiers up front (instead of inside
-  // build()) so we can wire them together - e.g. "when we come back
-  // online, refresh the landmarks list" - before the UI ever mounts.
+
   final landmarksProvider = LandmarksProvider();
   final activityProvider = ActivityProvider();
   final connectivityProvider = ConnectivityProvider();
