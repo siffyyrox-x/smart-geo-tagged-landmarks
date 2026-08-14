@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Requirement 2 (Map View) says marker color must reflect score
-/// (low -> high). Since the scoring formula/weights vary per student key,
-/// we can't hard-code absolute thresholds like "score > 80 = green" - so
-/// this interpolates red -> amber -> green based on where the score falls
-/// between the min and max score CURRENTLY loaded (see
-/// LandmarksProvider.scoreRange).
+
 Color scoreToColor(double score, double min, double max) {
   final range = (max - min).abs();
   // .clamp() on a double returns num, not double - convert explicitly so
