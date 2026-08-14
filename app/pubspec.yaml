@@ -12,7 +12,7 @@ dependencies:
   cupertino_icons: ^1.0.6
 
   # --- Networking ---
-  http: ^1.2.1                 # calling the faculty REST API (GET/POST + multipart)
+  http: ^1.2.1                 
 
   # --- State management (kept simple: Provider = ChangeNotifier + Consumer) ---
   provider: ^6.1.2
