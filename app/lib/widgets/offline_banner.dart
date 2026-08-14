@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/connectivity_provider.dart';
 
-/// Thin banner shown at the top of a screen whenever the device is
-/// offline, so the user always knows they're looking at cached data
-/// (Requirement 8: "Display data when offline").
+
 class OfflineBanner extends StatelessWidget {
   const OfflineBanner({super.key});
 
