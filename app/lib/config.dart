@@ -1,11 +1,4 @@
-/// App-wide configuration.
-///
-/// STUDENT: Sifat Sadakin (ID: 24341229)
-///
-/// Per the exam sheet, every request must include your assigned key as a
-/// `key` query parameter, or every endpoint replies with HTTP 403
-/// {"error": "invalid_or_expired_key"}. For this course the assigned key
-/// is the student's ID.
+
 const String kApiKey = '24341229';
 
 /// The API is a single script that routes by an `action` query parameter.
