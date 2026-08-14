@@ -6,16 +6,7 @@ import '../services/database_service.dart';
 
 enum SortMode { none, scoreHighToLow, scoreLowToHigh }
 
-/// Single source of truth for landmark data used by the Map, Landmarks
-/// List, and Add/View screens.
-///
-/// Flow on every refresh:
-///   1. Try the network (ApiService.getLandmarks).
-///   2. On success: update in-memory list AND overwrite the sqflite cache.
-///   3. On failure (offline, server error, etc): keep showing whatever is
-///      already in memory (which on cold start was loaded FROM the cache),
-///      and surface a friendly error instead of crashing
-///      (Requirement 8: Offline Support, Requirement 9: Error Handling).
+
 class LandmarksProvider extends ChangeNotifier {
   final ApiService _api;
   final DatabaseService _db;
