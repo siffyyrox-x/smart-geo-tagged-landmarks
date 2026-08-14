@@ -6,15 +6,7 @@ import '../providers/activity_provider.dart';
 import '../providers/connectivity_provider.dart';
 import '../services/location_service.dart';
 
-/// Shared "Visit" button logic (Requirement 3), used from both the Map
-/// screen's marker popup and the Landmarks List detail sheet so the flow
-/// only needs to be written - and gotten right - once.
-///
-/// Steps:
-///  1. Get current GPS location.
-///  2. Hand off to ActivityProvider, which either submits immediately
-///     (online) or queues it (offline) - Requirement 8.
-///  3. Show a Toast/Snackbar with the outcome (Requirement 9).
+
 Future<void> performVisit(BuildContext context, Landmark landmark) async {
   final messenger = ScaffoldMessenger.of(context);
   messenger.showSnackBar(
