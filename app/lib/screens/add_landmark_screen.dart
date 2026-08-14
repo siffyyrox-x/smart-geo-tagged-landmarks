@@ -9,11 +9,7 @@ import '../widgets/landmark_image.dart';
 import '../widgets/offline_banner.dart';
 import '../widgets/score_badge.dart';
 
-/// Requirement 6 (Add Landmark): Title, Latitude & Longitude, Image, with
-/// GPS auto-fetched for the new entry (but still editable, in case the
-/// user is adding a landmark for a place they're not standing at).
-/// Requirement 7 (Soft Delete Handling): also doubles as the "View /
-/// manage my landmarks" screen, with Delete and Restore actions.
+
 class AddLandmarkScreen extends StatefulWidget {
   const AddLandmarkScreen({super.key});
 
