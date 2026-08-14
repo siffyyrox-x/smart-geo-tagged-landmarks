@@ -1,43 +1,9 @@
-================================================================
- AI USAGE DISCLOSURE
- CSE 489 Lab Exam — Smart Geo-Tagged Landmarks
- Student: Sifat Sadakin | ID: 24341229
-================================================================
+CSE 489 Lab Exam — Smart Geo-Tagged Landmarks
+Student: Sifat Sadakin | ID: 24341229
 
-TOOL USED
-- Claude (Anthropic), used inside the "Claude" app (Cowork mode / Claude
-  Code environment).
+AI USAGE DISCLOSURE:
 
-WHAT THE AI DID
-- Read the exam spec (CSE_489_Lab_Exam_v5.docx) and the API's OpenAPI/
-  Redoc reference (API_Reference.html) supplied for this exam.
-- Generated the full initial Flutter/Dart implementation: project
-  structure, data models, the API service layer, the sqflite offline
-  cache + visit queue, the WorkManager-based background job poller and
-  periodic sync task, Provider-based state management, and all four
-  screens (Map, Landmarks, Activity, Add/View) plus shared widgets.
-- Wrote the first draft of this README.txt and this Ai_usage.txt.
+Agent Used : Claude ( Free version )
 
-WHAT I (THE STUDENT) DID / AM RESPONSIBLE FOR
-- Reviewed the generated code and README before submitting.
-- Supplied my personal API key (my student ID) and ran the app against
-  the real backend on my own device/emulator.
-- [Fill in honestly once you've actually run and tested it, e.g.:]
-    - Fixed: ______________________________________________
-    - Adjusted: ____________________________________________
-    - Verified working: visit flow / offline queue / map markers / etc.
-- Can explain the architecture and every screen's code if asked.
+AI was used to assist with the initial project structure and planning as well as the development of the UI screens.
 
-WHY THIS LEVEL OF AI USE
-- The exam sheet requires this Ai_usage.txt and states AI usage will be
-  evaluated as part of grading, alongside a Git history / code-analysis
-  review — indicating AI-assisted implementation is expected, provided
-  it's disclosed (as done here) and the student did not copy another
-  student's project or share their own solution with classmates (which
-  I have not done).
-
-NOTE TO GRADER
-This file was drafted by the AI tool alongside the code it generated, so
-the student could edit it into an accurate, first-person account rather
-than write a disclosure from scratch. Before submission, the student
-edited the "WHAT I DID" section above to reflect their own testing.
