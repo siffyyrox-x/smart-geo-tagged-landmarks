@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import '../config.dart';
 
-/// Loads a landmark's image from the server, with sensible fallbacks:
-///  - a placeholder icon while there's no image path at all
-///  - a broken-image icon if the network fetch fails (Requirement 9:
-///    "App must not crash if data changes" / graceful error handling)
 class LandmarkImage extends StatelessWidget {
   final String? imagePath;
   final double size;
