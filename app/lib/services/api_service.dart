@@ -5,9 +5,7 @@ import '../config.dart';
 import '../models/landmark.dart';
 import '../models/job.dart';
 
-/// Thrown for any non-2xx response from the API, or a malformed response
-/// body. Screens catch this and show a friendly Toast/Snackbar/dialog
-/// instead of crashing (Requirement 9: Error Handling).
+
 class ApiException implements Exception {
   final String message;
   final int? statusCode;
@@ -17,13 +15,7 @@ class ApiException implements Exception {
   String toString() => message;
 }
 
-/// Thin wrapper around the faculty-provided REST API
-/// (https://labs.anontech.info/cse489/exm3/api.php).
-///
-/// This is the ONLY place in the app that knows about HTTP / JSON / the
-/// `action=` query-parameter routing style. Everything else (providers,
-/// screens, background workers) talks to this class, never to `http`
-/// directly - that keeps the rest of the app simple and easy to test.
+
 class ApiService {
   final http.Client _client;
 
