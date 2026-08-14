@@ -1,21 +1,4 @@
-<!--
-  HOW TO USE THIS FILE
-  =====================
-  This is NOT a full AndroidManifest.xml. After you run `flutter create .`
-  (step 2 in README.txt), Flutter generates a real one at:
 
-      android/app/src/main/AndroidManifest.xml
-
-  Paste the <uses-permission ...> lines below directly UNDER the opening
-  <manifest ...> tag (before <application ...> starts). That's the only
-  manual edit needed - image_picker, geolocator and workmanager all merge
-  their own required manifest entries (FileProvider, receivers, etc)
-  automatically via the Gradle build, so nothing else needs to change.
-  Flutter's default template already sets the correct <activity>, launch
-  mode, and theme.
--->
-
-<!-- ============ Permissions (place under <manifest>) ============ -->
 
 <uses-permission android:name="android.permission.INTERNET" />
 
