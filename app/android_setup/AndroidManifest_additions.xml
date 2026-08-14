@@ -1,0 +1,41 @@
+<!--
+  HOW TO USE THIS FILE
+  =====================
+  This is NOT a full AndroidManifest.xml. After you run `flutter create .`
+  (step 2 in README.txt), Flutter generates a real one at:
+
+      android/app/src/main/AndroidManifest.xml
+
+  Paste the <uses-permission ...> lines below directly UNDER the opening
+  <manifest ...> tag (before <application ...> starts). That's the only
+  manual edit needed - image_picker, geolocator and workmanager all merge
+  their own required manifest entries (FileProvider, receivers, etc)
+  automatically via the Gradle build, so nothing else needs to change.
+  Flutter's default template already sets the correct <activity>, launch
+  mode, and theme.
+-->
+
+<!-- ============ Permissions (place under <manifest>) ============ -->
+
+<uses-permission android:name="android.permission.INTERNET" />
+
+<!-- Requirement 3 & 6: GPS for Visit + Add Landmark -->
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+<!-- Requirement 6: taking a photo for a new landmark -->
+<uses-permission android:name="android.permission.CAMERA" />
+
+<!-- Picking an existing photo (Android 13+ uses READ_MEDIA_IMAGES;
+     image_picker/gallery still needs the legacy permission on older
+     OS versions, so both are declared - Android ignores the one that
+     doesn't apply to its API level). -->
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+<uses-permission
+    android:name="android.permission.READ_EXTERNAL_STORAGE"
+    android:maxSdkVersion="32" />
+
+<!-- WorkManager needs this on newer Android versions to keep periodic
+     background sync reliable. -->
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
