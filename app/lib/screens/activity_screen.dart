@@ -5,11 +5,7 @@ import '../models/visit.dart';
 import '../providers/activity_provider.dart';
 import '../widgets/offline_banner.dart';
 
-/// Requirement 5 (Activity Screen / Visit History):
-/// Each entry shows Landmark name, Visit time, Distance - plus a status
-/// indicator so the user can see whether a visit already synced, is still
-/// being processed by the server, or is queued waiting for the internet
-/// (this doubles as a visible window into Requirement 8's offline queue).
+
 class ActivityScreen extends StatefulWidget {
   const ActivityScreen({super.key});
 
