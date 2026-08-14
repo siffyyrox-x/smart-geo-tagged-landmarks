@@ -8,13 +8,8 @@ import '../widgets/landmark_image.dart';
 import '../widgets/offline_banner.dart';
 import '../widgets/score_badge.dart';
 
-/// Requirement 4 (Landmarks List):
-///  - Show all landmarks in list form.
-///  - Each item shows Title, Score, Image.
-///  - Supports sorting by score and filtering by minimum score.
-/// Requirement 7 (Soft Delete Handling): deleted landmarks (is_active=0)
-/// never reach this screen because LandmarksProvider only loads active
-/// ones into `_landmarks`.
+
+
 class LandmarksListScreen extends StatelessWidget {
   const LandmarksListScreen({super.key});
 
