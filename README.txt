@@ -110,8 +110,3 @@ A 15-minute backup task handles missed jobs.
 6. Connect a device or emulator.
 7. Run `flutter run`.
 8. Allow location and camera permissions. 
-
-
-Submit before **15 August 2026, midnight Dhaka time**.
-
-Only one submission is allowed. 
